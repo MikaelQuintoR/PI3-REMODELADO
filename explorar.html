@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Búsqueda Inteligente - Conecta Futuro</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container app-container">
+        <header class="app-header-simple">
+            <h1>Búsqueda Inteligente</h1>
+            <p class="subtitle">Pregúntame y buscaré en mi conocimiento las mejores oportunidades para ti.</p>
+        </header>
+
+        <main>
+            <!-- Barra de búsqueda principal -->
+            <div class="ai-search-bar">
+                <input type="text" id="ai-search-input" placeholder="Ej: Talleres de arte gratis para jóvenes">
+                <button id="ai-search-btn">
+                    <span class="material-icons">search</span>
+                </button>
+            </div>
+
+            <!-- Sección de ideas rápidas -->
+            <section class="explore-section">
+                <h3>¿No sabes qué buscar? Toca una idea:</h3>
+                <div class="category-grid">
+                    <a href="#" class="category-card becas" data-prompt="Resume las principales becas para escolares en Perú, como Beca 18 y Beca Perú."><span class="material-icons">school</span><p>Becas</p></a>
+                    <a href="#" class="category-card tecnologia" data-prompt="Busca programas gratuitos para aprender a programar para jóvenes en Perú."><span class="material-icons">memory</span><p>Tecnología</p></a>
+                    <a href="#" class="category-card emprendimiento" data-prompt="Encuentra talleres de emprendimiento para adolescentes en Perú."><span class="material-icons">lightbulb</span><p>Emprendimiento</p></a>
+                    <a href="#" class="category-card salud" data-prompt="¿Dónde puedo encontrar apoyo psicológico gratuito si soy menor de edad?"><span class="material-icons">favorite</span><p>Apoyo Emocional</p></a>
+                </div>
+            </section>
+
+            <!-- Contenedor para los resultados de la IA -->
+            <section class="explore-section">
+                <h3>Resultados</h3>
+                <div id="ai-search-results" class="ai-search-results">
+                    <div class="initial-state">
+                        <span class="material-icons">auto_awesome</span>
+                        <p>Los resultados de tu búsqueda aparecerán aquí. ¡Anímate a preguntar!</p>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+    </div>
+
+    <nav class="bottom-nav">
+        <a href="home.html" class="nav-item"><span class="material-icons">home</span><span>Inicio</span></a>
+        <a href="explorar.html" class="nav-item active"><span class="material-icons">search</span><span>Explorar</span></a>
+        <a href="chat.html" class="nav-item"><span class="material-icons">smart_toy</span><span>Chat IA</span></a>
+        <a href="ayuda.html" class="nav-item"><span class="material-icons">support_agent</span><span>Ayuda</span></a>
+        <a href="perfil.html" class="nav-item"><span class="material-icons">person</span><span>Perfil</span></a>
+    </nav>
+    <script src="app.js"></script>
+</body>
+</html>

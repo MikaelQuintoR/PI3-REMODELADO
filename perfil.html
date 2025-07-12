@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Perfil - Conecta Futuro</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container app-container">
+        <header class="app-header-simple">
+            <h1>Mi Perfil</h1>
+        </header>
+
+        <main>
+            <section class="profile-info">
+                <img src="Perfil.png" alt="Foto de Perfil" class="profile-pic-large">
+                <h2>User</h2>
+                <p>Colegio "IE 0158 Santa Maria" - 4to de Secundaria</p>
+            </section>
+
+            <section class="profile-section">
+                <h3>Mis Intereses</h3>
+                <p class="subtitle">Personaliza tus notificaciones y recomendaciones de la IA eligiendo tus temas favoritos.</p>
+                <div class="interests-grid" id="interests-container">
+                    <div class="interest-item" data-interest="Tecnología">Tecnología</div>
+                    <div class="interest-item" data-interest="Deportes">Deportes</div>
+                    <div class="interest-item" data-interest="Arte y Cultura">Arte y Cultura</div>
+                    <div class="interest-item" data-interest="Ciencia">Ciencia</div>
+                    <div class="interest-item" data-interest="Música">Música</div>
+                    <div class="interest-item" data-interest="Voluntariado">Voluntariado</div>
+                </div>
+                <!-- Botón para guardar los intereses -->
+                <button class="cta-button" id="save-interests-btn">Guardar Intereses</button>
+            </section>
+
+            <a href="index.html" class="logout-link">Cerrar Sesión</a>
+        </main>
+    </div>
+
+    <nav class="bottom-nav">
+        <a href="home.html" class="nav-item"><span class="material-icons">home</span><span>Inicio</span></a>
+        <a href="explorar.html" class="nav-item"><span class="material-icons">search</span><span>Explorar</span></a>
+        <a href="chat.html" class="nav-item"><span class="material-icons">smart_toy</span><span>Chat IA</span></a>
+        <a href="ayuda.html" class="nav-item"><span class="material-icons">support_agent</span><span>Ayuda</span></a>
+        <a href="perfil.html" class="nav-item active"><span class="material-icons">person</span><span>Perfil</span></a>
+    </nav>
+    <script src="app.js"></script>
+</body>
+</html>

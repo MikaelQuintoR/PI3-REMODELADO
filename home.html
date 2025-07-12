@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio - Conecta Futuro</title>
+    <link rel="icon" href="icon.png", type="image/png">
+    <link rel="stylesheet" href="estilos.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container app-container">
+        <header class="app-header">
+            <div>
+                <h2>¡Hola, futuro crack!</h2>
+                <p>Mira las oportunidades para ti.</p>
+            </div>
+            <a href="perfil.html">
+                <img src="perfil.png" alt="Foto de Perfil" class="profile-pic">
+            </a>
+        </header>
+
+        <main>
+            <!-- NUEVA SECCIÓN DE RECOMENDACIONES DE LA IA -->
+            <section class="ai-recommendation-section">
+                <h3><span class="material-icons">auto_awesome</span> Recomendaciones de la IA para ti</h3>
+                <div id="ai-recommendations-container" class="ai-home-recommendations">
+                    <!-- Las tarjetas de resumen de la IA se generarán aquí con JS -->
+                </div>
+            </section>
+
+            <div class="filter-container">
+                <button class="filter-btn active" data-filter="all">Todos</button>
+                <button class="filter-btn" data-filter="becas">Becas</button>
+                <button class="filter-btn" data-filter="tecnologia">Tecnología</button>
+                <button class="filter-btn" data-filter="emprendimiento">Emprendimiento</button>
+                <button class="filter-btn" data-filter="trabajo">Formación</button>
+            </div>
+
+            <section class="feed" id="feed-container">
+                
+                <!-- Beca 18 con ID único -->
+                <a href="detalle_evento.html?id=beca18" class="card-link" data-category="becas">
+                    <div class="card">
+                        <div class="card-content">
+                            <span class="tag becas">Educación y Becas</span>
+                            <h4>Beca 18 – PRONABEC</h4>
+                            <p>Beca completa para jóvenes talentosos de bajos recursos. Cubre matrícula, pensión, laptop y más.</p>
+                        </div>
+                    </div>
+                </a>
+                
+                <!-- Concursos CONCYTEC con ID único -->
+                <a href="detalle_evento.html?id=concytec" class="card-link" data-category="tecnologia">
+                    <div class="card">
+                        <div class="card-content">
+                            <span class="tag tecnologia">Tecnología y Ciencia</span>
+                            <h4>Concursos Escolares – CONCYTEC</h4>
+                            <p>Participa en ferias de ciencia y tecnología. Gana premios, laptops y formación científica.</p>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Emprendimiento CENFOTUR con ID único -->
+                <a href="detalle_evento.html?id=cenfotur" class="card-link" data-category="emprendimiento">
+                    <div class="card">
+                        <div class="card-content">
+                            <span class="tag emprendimiento">Emprendimiento</span>
+                            <h4>Talleres de Emprendimiento – CENFOTUR</h4>
+                            <p>Cursos gratuitos sobre turismo, hotelería y gastronomía del MINCETUR. Para mayores de 15 años.</p>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Jóvenes Productivos con ID único -->
+                <a href="detalle_evento.html?id=jovenesproductivos" class="card-link" data-category="trabajo">
+                     <div class="card">
+                        <div class="card-content">
+                            <span class="tag trabajo">Formación Técnica</span>
+                            <h4>Jóvenes Productivos – Ministerio de Trabajo</h4>
+                            <p>Capacitación técnica gratuita, pasantías y empleo formal para jóvenes de 15 a 29 años.</p>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Beca Perú con ID único -->
+                <a href="detalle_evento.html?id=becaperu" class="card-link" data-category="becas">
+                    <div class="card">
+                        <div class="card-content">
+                            <span class="tag becas">Educación y Becas</span>
+                            <h4>Beca Perú</h4>
+                            <p>Cursos cortos y gratuitos en institutos y universidades. Convocatorias abiertas durante el año.</p>
+                        </div>
+                    </div>
+                </a>
+                
+            </section>
+        </main>
+    </div>
+
+    <nav class="bottom-nav">
+        <a href="home.html" class="nav-item active"><span class="material-icons">home</span><span>Inicio</span></a>
+        <a href="explorar.html" class="nav-item"><span class="material-icons">search</span><span>Explorar</span></a>
+        <a href="chat.html" class="nav-item"><span class="material-icons">smart_toy</span><span>Chat IA</span></a>
+        <a href="ayuda.html" class="nav-item"><span class="material-icons">support_agent</span><span>Ayuda</span></a>
+        <a href="perfil.html" class="nav-item"><span class="material-icons">person</span><span>Perfil</span></a>
+    </nav>
+    <script src="app.js"></script>
+</body>
+</html>

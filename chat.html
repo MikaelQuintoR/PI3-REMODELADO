@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asistente IA - Conecta Futuro</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container app-container">
+        <header class="app-header-simple">
+            <h1>Asistente Virtual</h1>
+            <p class="subtitle">Pregúntame sobre becas, carreras, salud mental o lo que necesites.</p>
+        </header>
+
+        <main class="chat-container">
+            <div id="chat-box" class="chat-box">
+                <div class="chat-message ai-message">
+                    <p>¡Hola! Soy Conecta, tu asistente virtual. ¿En qué puedo ayudarte hoy? Puedes preguntarme, por ejemplo: "Resume qué es Beca 18" o "¿Qué puedo hacer si me siento ansioso?".</p>
+                </div>
+            </div>
+
+            <div class="chat-input-area">
+                <textarea id="user-input" placeholder="Escribe tu pregunta aquí..." rows="1"></textarea>
+                <button id="send-btn" class="send-btn">
+                    <span class="material-icons">send</span>
+                </button>
+            </div>
+        </main>
+    </div>
+
+    <nav class="bottom-nav">
+        <a href="home.html" class="nav-item"><span class="material-icons">home</span><span>Inicio</span></a>
+        <a href="explorar.html" class="nav-item"><span class="material-icons">search</span><span>Explorar</span></a>
+        <a href="chat.html" class="nav-item active"><span class="material-icons">smart_toy</span><span>Chat IA</span></a>
+        <a href="ayuda.html" class="nav-item"><span class="material-icons">support_agent</span><span>Ayuda</span></a>
+        <a href="perfil.html" class="nav-item"><span class="material-icons">person</span><span>Perfil</span></a>
+    </nav>
+
+    <script src="app.js"></script>
+</body>
+</html>
