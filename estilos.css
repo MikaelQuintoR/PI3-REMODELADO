@@ -72,8 +72,8 @@ a { text-decoration: none; color: inherit; }
 .profile-info { text-align: center; margin-bottom: 2rem; }
 .profile-pic-large { width: 100px; height: 100px; border-radius: 50%; object-fit: cover; border: 3px solid var(--primary-color); margin-bottom: 0.5rem; }
 .profile-info h2 { font-size: 1.5rem; }
-.profile-section { margin-bottom: 2rem; }
-.interests-grid { display: flex; flex-wrap: wrap; gap: 0.8rem; }
+.profile-section { margin-bottom: 2rem; padding-top: 1.5rem; padding-bottom: 1.5rem;}
+.interests-grid { display: flex; flex-wrap: wrap; gap: 1rem; margin-bottom: 1.5rem; }
 .interest-item { padding: 0.6rem 1.2rem; border-radius: 50px; background: var(--white-color); border: 1px solid var(--border-color); font-weight: 600; cursor: pointer; }
 .interest-item.active { background: var(--primary-color); color: var(--white-color); border-color: var(--primary-color); }
 .logout-link { display: block; text-align: center; color: #f44336; font-weight: 600; margin-top: 2rem; }
