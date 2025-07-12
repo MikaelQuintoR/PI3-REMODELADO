@@ -394,3 +394,62 @@ a { text-decoration: none; color: inherit; }
     color: var(--white-color);
     opacity: 0.8;
 }
+
+/* === MEJORAS VISUALES APLICADAS A LA SECCIÓN HOME === */
+
+/* Mejor fondo general con degradado sutil */
+body {
+    background: linear-gradient(to right, #f4f6f8, #f9f9ff);
+}
+
+/* Tarjetas con animación y efecto hover */
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Botones de filtro más suaves y dinámicos */
+.filter-btn {
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    transition: all 0.3s ease;
+}
+.filter-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* Etiquetas de categoría con más vida visual */
+.tag {
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.05);
+    letter-spacing: 0.3px;
+}
+
+/* Entrada animada para las recomendaciones de IA */
+.ai-home-recommendations {
+    animation: fadeIn 0.6s ease-in;
+}
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Efecto hover sutil en tarjetas de la IA */
+.ai-card {
+    transition: transform 0.3s ease;
+}
+.ai-card:hover {
+    transform: scale(1.03);
+}
+
+/* Título de la sección de recomendaciones de IA estilizado */
+.ai-recommendation-section h3 {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 1.1rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
